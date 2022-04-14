@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+.category {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: rgb(235, 243, 243);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+img {
+    margin-top: 5%;
+}
+
+.outer-col-1 {
+    position: fixed;
+    width:17%;
+    height: 100%;
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: deepskyblue;
+}
+
+.outer-col-2 {
+    margin-left: 17%;
+}
+
+.outer-col-2 h2 {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.me hr {
+    border: 2px solid;
+    color: goldenrod;
+}
+
+.me p {
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  /*****************/
+ /* INFORMATIONS  */
+/*****************/
+
+section.info {
+    display: flex;
+}
+
+section.info div {
+    display: inline;
+    width: 50%;
+    text-align: center;
+}
+
+section.info div#pres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 1%;  
+}
+
+section.info div h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.info div hr {
+    margin-top: 5px;
+    border: 2px solid;
+    color: goldenrod;
+}
+
+section.info div#pres p {
+    width: 60%;
+    text-align: justify;
+}
+
+  /*****************/
+ /*  NAVIGATION   */
+/*****************/
+
+:root {
+    --hauteur-menu: 10px;
+}
+
+.outer-col-1 hr {
+    border: 1px solid;
+    color: deepskyblue;
+}
+
+.menu a#semestre {
+    font-size: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    background-color: antiquewhite;
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+li {
+      padding: 3%;
+  }
+
+li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.menu > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+  }
+
+.list {
+    margin-top: var(--hauteur-menu);
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.list > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+nav > ul > li:hover > a{
+    color: #2169EC;
+  }
+
+.list > li:hover {
+    background-color: rgba(33, 105, 236, 0.3);
+  }
+  
+.list > li:hover > a {
+    color: white;
+  }
+
+@keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+
+.menu:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+  }
+
+@keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid deepskyblue;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid deepskyblue;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+  }
+
+  .menu:hover > .list {
+    animation: apparitionSousMenu 1s forwards;
+  }
+
+/* SKILLS */
+
+section.info div#tech h4 {
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section.info div#tech h4#web {
+    margin-top: 5%;
+}
+
+section.info div#tech h4#poo, section.info div#tech h4#bn {
+    margin-top: 10%;
+}
+
+section.info div#tech {
+    margin-left: 1%;
+    margin-right: 2%;  
+}
+
+div#tech p {
+    margin-left: 20%;
+    text-align: left;
+}
+
+section.info div.container {
+    margin-left: 20%;
+    display: flex;
+    width: 60%; 
+    background-color: #ddd;
+  }
+  
+.skills {
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    color: white;
+ }
+  
+.skills.html {
+    width: 80%;
+    text-align: center;
+    background-color: #e6952c;
+}
+
+.skills.css {
+    width: 65%;
+    text-align: center;
+    background-color: #2c57e6;
+}
+
+.skills.java {
+    width: 50%;
+    text-align: center;
+    background-color: #87a9f3;
+}
+
+.skills.csharp {
+    width: 30%;
+    text-align: center;
+    background-color: #55c73e;
+}
+
+.skills.bash {
+    width: 30%;
+    text-align: center;
+    background-color: #8ea7aa;
+}

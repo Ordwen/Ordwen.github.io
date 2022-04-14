@@ -1,0 +1,219 @@
+/** COMPUTER VIEW   **/
+
+@media (min-width: 900px) {
+    .outer-col-1 {
+        width: 17%;
+    }
+    .outer-col-2 {
+        margin-left: 17%;
+        width: 100%;
+        height: 100%;
+    }
+    .list>li>a,
+    .list>li>b {
+        height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+    .outer-col-1 {
+        position: fixed;
+        height: 100%;
+        color: white;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /*****************/
+    /*  NAVIGATION   */
+    /*****************/
+     :root {
+        --hauteur-menu: 10px;
+    }
+    .outer-col-1 hr {
+        border: 1px solid;
+        color: deepskyblue;
+    }
+    .menu a#semestre {
+        font-size: 20px;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+    }
+    nav>ul {
+        display: flex;
+        text-align: center;
+        box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+        height: var(--hauteur-menu);
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav>ul>li {
+        background-color: antiquewhite;
+        position: relative;
+        height: 100%;
+        flex: 1;
+    }
+    nav>ul>li>a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    li {
+        padding: 3%;
+    }
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+    li>b {
+        padding: 8%;
+        text-decoration: none;
+        color: black;
+    }
+    .menu>a:after {
+        content: '❯';
+        font-size: 15px;
+        margin-left: 7px;
+        display: inline-block;
+    }
+    .list {
+        margin-top: var(--hauteur-menu);
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        text-align: left;
+        background-color: white;
+        border-radius: 2px;
+        overflow: hidden;
+        max-height: 0;
+    }
+    nav>ul>li:hover>a {
+        color: #2169EC;
+    }
+    .list>li:hover {
+        background-color: rgba(33, 105, 236, 0.3);
+    }
+    .list>li:hover>a {
+        color: white;
+    }
+    @keyframes rotationFleche {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+    @keyframes apparitionSousMenu {
+        0% {
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+            border-top: 3px solid deepskyblue;
+        }
+        30% {
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+        }
+        100% {
+            max-height: 50em;
+            border-top: 3px solid deepskyblue;
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+        }
+    }
+    .menu:hover>a:after {
+        animation: rotationFleche 0.2s linear forwards;
+    }
+    .menu:hover>.list {
+        animation: apparitionSousMenu 1s forwards;
+    }
+}
+
+
+/** MOBILE VIEW **/
+
+@media (max-width: 900px) {
+    body {
+        height: auto;
+    }
+    .outer-col-1>div>a>img {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .outer-col-1 hr,
+    .outer-col-1 li.menu {
+        height: 0;
+        visibility: hidden;
+    }
+    .outer-col-1 {
+        width: 12%;
+        position: fixed;
+        height: 100%;
+        background-color: black;
+    }
+    .outer-col-2 {
+        margin-left: 12%;
+        width: 100%;
+    }
+    p.category {
+        font-size: 0;
+    }
+    .list {
+        overflow: hidden;
+        max-height: 0;
+    }
+    /*****************/
+    /*  NAVIGATION   */
+    /*****************/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.category {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: rgb(235, 243, 243);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+img {
+    margin-top: 5%;
+}
+
+ul {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: deepskyblue;
+}
+
+a:visited {
+    color: deepskyblue;
+}
+
+.outer-col-2 .pres h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pdf {
+    display: flex;
+}
