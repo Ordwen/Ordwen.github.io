@@ -1,5 +1,6 @@
 /** COMPUTER VIEW   **/
-@media (min-width: 900px) {
+
+@media (min-width: 1045px) {
     .outer-col-1 {
         width: 17%;
     }
@@ -25,7 +26,6 @@
         flex-direction: column;
         text-align: center;
     }
-
     .outer-col-1 .me hr {
         border: 1px solid;
         color: deepskyblue;
@@ -139,14 +139,12 @@
 
 /** MOBILE VIEW **/
 
-@media (max-width: 900px) {
+@media (max-width: 1045px) {
+    .me {
+        text-align: center;
+    }
     body {
         height: auto;
-    }
-    .outer-col-1>div>a>img {
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
     }
     .outer-col-1 hr,
     .outer-col-1 li.menu {
@@ -240,12 +238,20 @@ a:visited {
     color: goldenrod;
 }
 
-img#mail, img#github, img#twitter, img#instagram {
+img#mail,
+img#github,
+img#twitter,
+img#instagram {
     margin-left: 10%;
 }
 
-  /*****************/
- /* INFORMATIONS  */
+
+/*****************/
+
+
+/* INFORMATIONS  */
+
+
 /*****************/
 
 .outer-col-2 p {
@@ -267,7 +273,7 @@ section.info div#pres {
     flex-direction: column;
     align-items: center;
     margin-left: 2%;
-    margin-right: 1%;  
+    margin-right: 1%;
 }
 
 section.info div h3 {
@@ -287,7 +293,9 @@ section.info div#pres p {
     text-align: justify;
 }
 
+
 /* Style buttons */
+
 .btn {
     background-color: deepskyblue;
     border: none;
@@ -295,12 +303,15 @@ section.info div#pres p {
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
     background-color: RoyalBlue;
-  }
+}
+
 
 /* SKILLS */
 
@@ -314,13 +325,14 @@ section.info div#tech h4#web {
     margin-top: 5%;
 }
 
-section.info div#tech h4#poo, section.info div#tech h4#bn {
+section.info div#tech h4#poo,
+section.info div#tech h4#bn {
     margin-top: 10%;
 }
 
 section.info div#tech {
     margin-left: 1%;
-    margin-right: 2%;  
+    margin-right: 2%;
 }
 
 div#tech p {
@@ -331,16 +343,16 @@ div#tech p {
 section.info div.container {
     margin-left: 20%;
     display: flex;
-    width: 60%; 
+    width: 60%;
     background-color: #ddd;
-  }
-  
+}
+
 .skills {
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     color: white;
- }
-  
+}
+
 .skills.html {
     width: 80%;
     text-align: center;
@@ -369,4 +381,8 @@ section.info div.container {
     width: 30%;
     text-align: center;
     background-color: #8ea7aa;
+}
+
+background-color: #8ea7aa;
+
 }
