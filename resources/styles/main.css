@@ -143,6 +143,10 @@
     .me {
         text-align: center;
     }
+    .me img {
+        width: 95%;
+        height: 95%;
+    }
     body {
         height: auto;
     }
@@ -381,8 +385,4 @@ section.info div.container {
     width: 30%;
     text-align: center;
     background-color: #8ea7aa;
-}
-
-background-color: #8ea7aa;
-
 }
