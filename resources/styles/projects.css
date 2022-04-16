@@ -256,8 +256,29 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2%;
 }
 .pdf hr {
     border: 2px solid;
     color: goldenrod;
+}
+/* RETEX */
+section.retex {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+.retex hr {
+    border: 2px solid;
+    color: goldenrod;
+}
+.retex p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.context hr, .images hr {
+    border: 1px solid;
+}
+.context h2, .images h2 {
+    font-size: large;
 }
