@@ -1,0 +1,32 @@
+/****************************/
+/* mise en page du tableau */
+/**************************/
+.pestel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.pestel table {
+    border-collapse: collapse;
+}
+
+.pestel table tr, .pestel table td {
+    border: 2px solid rgb(160, 224, 233);
+}
+
+td#categorie {
+    background-color: rgb(198, 236, 236);
+    font-weight: bold;
+}
+
+/* mise en page du développement */
+.developpement {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: justify;
+}

@@ -1,0 +1,47 @@
+/* disposition des colonnes */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:4%;
+    text-align: center;
+}
+
+/* mise en gras des noms des colonnes */
+.services h5 {
+    font-weight: bold;
+}
+
+/* positionnement des images des colonnes */
+.services img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* présentation de la colonne "particuliers" */
+.particuliers {
+    width: 33%;
+    margin-left: 1%;
+    margin-right: 2%;
+    background-color: #FFCCCC;
+    border-radius: 10%;
+}
+
+/* présentation de la colonne "entreprises" */
+.entreprises {
+    width: 33%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #FFECA5;
+    border-radius: 10%;
+}
+
+/* présentation de la colonne "autres" */
+.autre {
+    width: 33%;
+    margin-left: 2%;
+    margin-right: 1%;
+    background-color: #B1DDDB;
+    border-radius: 10%;
+}

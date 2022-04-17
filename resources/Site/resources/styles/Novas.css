@@ -1,0 +1,168 @@
+/*dimension de l'image -------------------------------------------------------*/
+.top img{
+    max-width: 140px;
+    max-height: 100px;
+    display: inline-flex;
+    align-items: flex-start;
+}
+/*position des ul du top -----------------------------------------------------*/
+.top ul {
+    list-style-type: none; 
+    text-align: center; 
+    display: inline;
+}
+/*position et caractéristiques des li dans le top --    ----------------------*/
+.top li a { 
+    width: 100px; 
+    color: #00acee; 
+    text-decoration: none;
+}
+/*affichage des rectangles bleus lors du passage de la souris -----------------*/
+.top li a:hover{
+    color: white; 
+    background-color: #00acee;
+    border-radius: 5px;
+} 
+/*caractéristique de la police du header -------------------------------------*/
+header{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+}
+header li{
+    display: inline-block;
+    list-style: none;
+    background-color: white;
+    color: white;
+    padding: 10px;
+    margin-top: 6%;
+}
+/* caractéristique de la police du Main --------------------------------------*/
+main {
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 0px;
+    margin-bottom: 0%;
+    left: 0;
+    right: 0;
+}
+/* background ----------------------------------------------------------------*/
+.background{
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    z-index: -1;
+    display: block;
+    background-image: url("../images/background.png");
+    width: 10000px;
+    height: 10000px;
+    filter: blur(5px);
+
+}
+/*Réglage des puces présentent dans le bottom --------------------------------*/ 
+.bottom li a { 
+    display: block; 
+    width: 100px; 
+    color: white; 
+    text-decoration: none; 
+    padding: 5px; 
+    font-size: 20px;
+}
+/*Réglage de l'arrière plan et du texte du Middle ----------------------------*/
+.middle{
+    padding: 100px; 
+    text-align: center;
+}
+/*Réglage du slider ----------------------------------------------------------*/
+.slider img{
+    width: 1000px;
+}
+.slider {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.slides{ 
+    width: calc(1000px * 3);
+    display: flex;
+    animation: slide 20s infinite;
+}
+.slide{
+    float: left;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-1000px);
+    }
+    43%{
+        transform: translateX(-1000px);
+    }
+    66%{
+        transform: translateX(-2000px);
+    }
+    76%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*Reglage de l'arrière plan et du texte du bottom ----------------------------*/ 
+.bottom{
+    padding: 50px; 
+    text-align: center;
+}
+/*Régalge de la police et de l'opacité du Copyright en bas de page -----------*/
+.copyright{
+    text-align:center;
+    padding-top:50px;
+    opacity:0.5;
+    font-size:13px;
+}
+/*Réglage de la police et du positionnement du text dans le footer -----------*/
+footer{
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #00acee;
+    color: white;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    position:relative;
+}
+/*Réglage de la position et de la couleur du footer --------------------------*/
+footer li {
+    list-style: none;
+    color: white;
+}
+/*--------------------------------------------------------------------------------*/
+.bottom{
+    display: inline-flex;
+    width:100%;
+    justify-content: space-around;
+}
+/*--------------------------------------------------------------------------------*/
+.bottom-button{
+    font-size: large;
+}
+.bottom-button li {
+    font-size: small;
+    margin: auto;
+    padding: 0%;
+}
+/*--------------------------------------------------------------------------------*/
+.bottom-button li>a{
+    font-size: small;
+    margin: auto;
+    width: auto;
+    padding: 0%;
+}

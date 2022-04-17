@@ -246,9 +246,9 @@ img#mail,
 img#github,
 img#twitter,
 img#instagram {
-    margin-left: 10%;
+    text-align: center;
+    margin-left: 1%;
 }
-
 
 /*****************/
 

@@ -1,0 +1,26 @@
+/* disposition des colonnes */
+.partenaires {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:4%;
+    text-align: center;
+}
+
+/* mise en gras des noms des colonnes */
+.partenaires h5 {
+    font-weight: bold;
+}
+
+.partenaires h6 {
+   font-style: oblique;
+}
+
+/* présentation des colonnes */
+.partenaires div {
+    font-size: small;
+    width: 33%;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-radius: 2%;
+    border: 1px solid black;
+}

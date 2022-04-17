@@ -1,0 +1,13 @@
+/* présentation des champs */
+input, textarea {
+    width: 65%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* présentation des zones de sélection */
+input[type="radio"] {
+    width: auto;
+}
