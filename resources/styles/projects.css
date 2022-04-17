@@ -276,9 +276,9 @@ section.retex {
     margin-left: 5%;
     margin-right: 5%;
 }
-.context hr, .images hr {
+.context hr, .images hr, .embed hr {
     border: 1px solid;
 }
-.context h2, .images h2 {
+.context h2, .images h2, .embed h2 {
     font-size: large;
 }
