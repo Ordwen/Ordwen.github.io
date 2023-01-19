@@ -275,9 +275,18 @@ section.retex div.images img {
     margin-left: 5%;
     margin-right: 5%;
 }
+.context {
+    padding-left: 20%;
+    padding-right: 20%;
+}
 .context hr, .images hr, .embed hr {
     border: 1px solid;
 }
 .context h2, .images h2, .embed h2 {
     font-size: large;
+}
+.images img {
+    width: 50%;
+    height: auto ;
+    border-radius: 5%;
 }
