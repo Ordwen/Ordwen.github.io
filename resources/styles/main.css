@@ -38,7 +38,7 @@
     /*****************/
     /*  NAVIGATION   */
     /*****************/
-     :root {
+    :root {
         --hauteur-menu: 10px;
     }
     .outer-col-1 hr {
@@ -154,6 +154,7 @@
     }
     body {
         height: auto;
+        font-family: system-ui, sans-serif;
     }
     .outer-col-1 hr,
     .outer-col-1 li.menu {
@@ -204,7 +205,7 @@
 .category {
     font-weight: bold;
     font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, sans-serif;
 }
 
 body {
@@ -220,7 +221,7 @@ img {
 }
 
 ul {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -243,7 +244,7 @@ a:visited {
     text-align: center;
     font-size: 20px;
     text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 .profile {
@@ -254,7 +255,7 @@ a:visited {
 .me p {
     text-align: center;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 .me hr {
@@ -279,7 +280,7 @@ img#instagram {
 /*****************/
 
 .outer-col-2 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, sans-serif;
 }
 
 section.info, section.indexProjects {
@@ -297,7 +298,7 @@ section.info div#pres {
 section.info div h3, section.indexProjects div h3 {
     text-align: center;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 section.info div hr, section.indexProjects div hr {
@@ -340,7 +341,7 @@ section.indexProjects div#projects ul>li>a {
     border: 3px solid;
     border-color: goldenrod;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 section.indexProjects div#projects ul>li>a:hover {
@@ -371,10 +372,11 @@ section.indexProjects div#projects ul>li>a:hover {
 section.info div#tech h4 {
     text-align: center;
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
-section.info div#tech h4#web {
+section.info div#tech h4#web,
+section.info div#tech h4#tools {
     margin-top: 5%;
 }
 
@@ -393,45 +395,9 @@ div#tech p {
     text-align: left;
 }
 
-section.info div.container {
-    margin-left: 20%;
-    display: flex;
-    width: 60%;
-    background-color: #ddd;
+div#tech img {
+    width: 15%;
+    height: auto;
+    vertical-align: middle
 }
 
-.skills {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.skills.html {
-    width: 80%;
-    text-align: center;
-    background-color: #e6952c;
-}
-
-.skills.css {
-    width: 65%;
-    text-align: center;
-    background-color: #2c57e6;
-}
-
-.skills.java {
-    width: 50%;
-    text-align: center;
-    background-color: #87a9f3;
-}
-
-.skills.csharp {
-    width: 30%;
-    text-align: center;
-    background-color: #55c73e;
-}
-
-.skills.bash {
-    width: 30%;
-    text-align: center;
-    background-color: #8ea7aa;
-}
